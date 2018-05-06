@@ -1,0 +1,110 @@
+/* Fire fox and iframe fill*/
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #e9e9e9;
+	font-family:  'Century Gothic','CenturyGothic','AppleGothic','Muli',sans-serif;
+}
+
+.clearfix
+{
+	overflow: auto;
+}
+
+hr {
+
+}
+div{
+	padding: 0em 10em 0em 10em;
+	margin: 0;
+}
+
+a:link {
+    color: #a1a2a1;
+}
+
+a:visited {
+    color: #a1a2a1;
+}
+
+/*Nav */
+ul.navagation {
+	list-style-type: none;
+	position: fixed;
+    left: 0;
+    top: 0;
+	width: 100%;
+	margin: 0em 0em 0.5em 0em;
+	padding: 0em 0em 0.5em 10em;
+    background-color: #d2d2d2;
+
+}
+
+
+
+li.navagation {
+    float: left;
+}
+
+li a.navagation {
+    display: block;
+    padding: 0.5em 0em 0em 3em;
+	margin: 0.5em 0em 0em 0em;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover.navagation {
+    background-color: #c3c5c3;
+}
+
+
+
+/*CenterNavagation*/
+ul.center {
+	list-style-type: none;
+	padding:0;
+	margin: 0.5em 0em 0.5em 0em;
+    overflow: hidden;
+
+}
+li.center {
+    float: left;
+		margin: 0.5em 0em 0.5em 0em;
+}
+
+li a.center {
+	font-size: 2em;
+    display: block;
+    padding: 0.5em 0em 0.5em 3em;
+	margin: 0.5em 0em 0.5em 0em;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover.center {
+    background-color: #c3c5c3;
+}
+
+
+
+/* Footer */
+ul.footer {
+	list-style-type: none;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+	width: 100%;
+	margin: 0.5em 0em 0em 0em;
+	padding: 0.5em 0em 0em 3em;
+    background-color:  #d2d2d2;
+}
+
+p.footer {
+	 color: #a1a2a1;
+	 display: block;
+	 text-align: right;
+	 padding: 0em 10em 0.2em 0em;
+	margin: 0em 3em 0.2em 0em;
+    text-decoration: none;
+}
