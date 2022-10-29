@@ -2,7 +2,8 @@
 body {
 	padding: 0px;
 	margin: 0px;
-	background-color: #e9e9e9;
+	background-color: #353535;
+	color: #eef1fb;
 	font-family:  'Century Gothic','CenturyGothic','AppleGothic','Muli',sans-serif;
 }
 
@@ -20,11 +21,11 @@ div{
 }
 
 a:link {
-    color: #a1a2a1;
+    color: #eef1fb;
 }
 
 a:visited {
-    color: #a1a2a1;
+    color: #eef1fb;
 }
 
 /*Nav */
@@ -54,10 +55,10 @@ li a.navagation {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover.navagation {
+/*li a:hover.navagation {
     background-color: #c3c5c3;
 }
-
+*/
 
 
 /*CenterNavagation*/
@@ -83,7 +84,7 @@ li a.center {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover.center {
-    background-color: #c3c5c3;
+    background-color: #eac1f2;
 }
 
 
@@ -97,11 +98,11 @@ ul.footer {
 	width: 100%;
 	margin: 0.5em 0em 0em 0em;
 	padding: 0.5em 0em 0em 3em;
-    background-color:  #d2d2d2;
+    background-color:  #2c2c2c;
 }
 
 p.footer {
-	 color: #a1a2a1;
+	 color: #eef1fb;
 	 display: block;
 	 text-align: right;
 	 padding: 0em 10em 0.2em 0em;
