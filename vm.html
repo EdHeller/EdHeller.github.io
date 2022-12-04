@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <!-- DOCTYPE for fall back -->
 <html lang="en-US">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta charset="UTF-8"/>
-	<meta lang="en-US"/>
-	<link rel='stylesheet' id='InfoBar'  href='./css/main.css' type='text/css' media='all' />
-	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8" />
+  <meta lang="en-US" />
+  <link rel='stylesheet' id='InfoBar' href='./css/vm.css' type='text/css' media='all' />
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
+
 <body>
-<!-- Nav -->
-<iframe src="nav.html" style="border:none; width: 100%; height: 3em;"></iframe>
+  <!-- links -->
+  <div style="padding: 0px; margin: 5em 0em 0em 10em;">
+    <a href="index.html"> <img src="./media/home.svg" height="20em" width="20em" /> Return</a>
+  </div>
+  <script src="../build/libv86.js"></script>
+  <script>
+    "use strict";
 
-
-
-<!-- links -->
-<div style="padding: 0; margin: 5em 0em 0em 10em;">
-<a href="index.html"> <img src="./media/home.svg" height="20em" width="20em"/> Return</a>
-</div>
-<script src="../build/libv86.js"></script>
-<script>
-"use strict";
-
-window.onload = function()
-{
-    var emulator = window.emulator = new V86Starter({
+    window.onload = function () {
+      var emulator = window.emulator = new V86Starter({
         wasm_path: "../build/v86.wasm",
         memory_size: 32 * 1024 * 1024,
         vga_memory_size: 2 * 1024 * 1024,
-        screen_container: document.getElementById("screen_container"),
+        screen_container: document.getElementById("sc"),
         bios: {
-            url: "../bios/seabios.bin",
+          url: "../bios/seabios.bin",
         },
         vga_bios: {
-            url: "../bios/vgabios.bin",
+          url: "../bios/vgabios.bin",
         },
         fda: {
-            url: "../images/boot.bin",
+          url: "../images/boot.bin",
         },
         autostart: true,
-    });
-}
-</script>
+      });
+    }
+  </script>
 
-<!-- A minimal structure for the ScreenAdapter defined in browser/screen.js -->
-<div id="screen_container">
+  <!-- A minimal structure for the ScreenAdapter defined in browser/screen.js -->
+  <div id="sc" style="padding-left: 20em;">
     <div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
     <canvas style="display: none"></canvas>
-</div>
+  </div>
 
-</div>
+  </div>
 
 
-<!-- Footer -->
-<ul class="footer">
-<p class="footer"> Copyright &copy; Ed Heller 2022</p>
-</ul>
+  <!-- Footer -->
+  <ul class="footer">
+    <p class="footer"> Copyright &copy; Ed Heller 2022</p>
+  </ul>
 
- <script src="./script/svgeezy.js"></script>
-        <script>
-            svgeezy.init(false, 'png');
-        </script>
+  <script src="./script/svgeezy.js"></script>
+  <script>
+    svgeezy.init(false, 'png');
+  </script>
 </body>
+
 </html>
