@@ -1,0 +1,243 @@
+html {
+	font-family:'SF Pro Display',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size:18px;-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing:antialiased;
+	box-sizing:border-box;
+	-webkit-scroll-behavior:smooth;
+	-moz-scroll-behavior:smooth;
+	-ms-scroll-behavior:smooth;
+	scroll-behavior:smooth;
+	background: linear-gradient(85deg, #fff 0%, #ddd 40%, #ddd 100%);
+}
+
+
+a {
+	-webkit-text-decoration:none;
+	text-decoration:none;
+	position:relative;
+}
+
+body {
+  height: 100%;
+}
+
+linkz {
+	display: block;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	font-size: 0.7rem;
+	-webkit-letter-spacing: 1.2px;
+	-moz-letter-spacing: 1.2px;
+	-ms-letter-spacing: 1.2px;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	padding: 0.25rem;
+	padding-left: 0.25rem;
+	font-weight: bold;
+	margin-right: 20px;
+	line-height: 40px;
+	color: #222;
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition: 0.3s all ease-out;
+	transition: 0.3s all ease-out;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.social-one {
+	order: 1;
+    width: 33%;
+	padding: 2em 4em;
+	margin:	2em 1em;
+}
+
+.social-two{
+ order: 2;
+    width: 33%;
+	padding: 2em 4em;
+	margin:	2em 1em;
+}
+
+.social-tri{
+ order: 3;
+    width: 33%;
+	padding: 2em 4em;
+	margin:	2em 1em;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.container-one{
+    order: 1;
+    width: 33%;
+	padding: 2em 4em;
+}
+
+.container-two{
+    order: 2;
+    width: 33%;
+	padding: 2em 4em;
+}
+
+.container-tri{
+    order: 3;
+    width: 33%;
+	padding: 2em 4em;
+}
+
+.container-text{
+    order: 1;
+    width: 40%;
+}
+
+.container-image{
+    order: 2;
+    width: 60%;
+    align-self: flex-end;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    }
+
+.flex-item:nth-child(1) {
+    order: 1;
+    flex: 25 1;
+	
+    }
+
+.flex-item:nth-child(2) {
+    order: 2;
+    flex: 50 1;
+    align-self: auto;
+	
+    }
+
+.flex-item:nth-child(3) {
+    order: 3;
+    flex: 0 1;
+    align-self: auto;
+	
+    }
+	
+.flex-item:nth-child(4) {
+    order: 4;
+    flex: 25 1;
+    align-self: auto;
+	
+    }
+	
+.button::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(145deg,rgba(0,0,0,0.05),rgba(255,255,255,0.2));
+  mix-blend-mode: luminosity;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 24px;
+  -webkit-animation: none;
+  animation: none;
+  opacity: 0;
+  -webkit-transition: 0.3s opacity ease-in-out,0.3s #222;
+  transition: 0.3s opacity ease-in-out,0.3s #222;
+}
+
+#products{
+	background: #fafafa;
+	padding: 2em 1em;
+	border-radius: 24px;
+}
+
+.other{
+	background: #fafafa;
+	padding: 2em 2em;
+	margin:	2em 1em;
+	border-radius: 24px;
+}
+
+.button {
+	font-size: 0.66rem;
+	-webkit-letter-spacing: 1.2px;
+	-moz-letter-spacing: 1.2px;
+	-ms-letter-spacing: 1.2px;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	padding: 0.75rem 1.5rem;
+	font-weight: bold;
+	margin-right: 20px;
+	border-radius: 24px;
+	line-height: 40px;
+	color: #222;
+	background: #fafafa;
+	box-shadow: -4px -4px 10px rgba(255,255,255,0.75),4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.dark-button{
+  font-size: 0.66rem;
+  -webkit-letter-spacing: 1.2px;
+  -moz-letter-spacing: 1.2px;
+  -ms-letter-spacing: 1.2px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+  border-radius: 24px;
+  line-height: 40px;
+  color: #eee;
+  background: #363636;
+  box-shadow: -4px -4px 10px rgba(255,255,255,0.8),4px 4px 10px rgba(0,0,0,0.2);
+}
+
+
+h1 {
+	font-size: 5rem;
+    margin: 15vh auto 0px;
+}
+
+h5 {
+	font-weight: 300;
+	font-size: 1rem;
+	margin: 1em auto 0px;
+}
+
+h4{
+	font-weight: 400;
+	font-size: 1rem;
+	margin: 1em auto 0px;
+}
+
+h6 {
+	font-weight: 300;
+	font-size: 0.75rem;
+	margin: -1em auto 0px;
+}
+
+img {
+	width:383px;
+	height:210px;
+	margin: -30vh auto 0px;
+	/*margin-left:15px;
+    max-width: 100%*/
+}
+

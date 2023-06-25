@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- DOCTYPE for fall back -->
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8" />
+  <meta lang="en-US" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <title>Ed Heller</title>	
+</head>
+
+<body>
+  <!-- links -->
+  <script src="../build/libv86.js"></script>
+  <script>
+    "use strict";
+
+    window.onload = function () {
+      var emulator = window.emulator = new V86Starter({
+        wasm_path: "./build/v86.wasm",
+        memory_size: 32 * 1024 * 1024,
+        vga_memory_size: 2 * 1024 * 1024,
+        screen_container: document.getElementById("sc"),
+        bios: {
+          url: "./bios/seabios.bin",
+        },
+        vga_bios: {
+          url: "./bios/vgabios.bin",
+        },
+        fda: {
+          url: "./bios/boot.bin",
+        },
+        autostart: true,
+      });
+    }
+  </script>
+
+  <!-- A minimal structure for the ScreenAdapter defined in browser/screen.js -->
+  <div id="sc" style="padding-left: 20em;">
+    <div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
+    <canvas style="display: none"></canvas>
+  </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <h5 style="padding-left: 20em;"> Copyright &copy; Ed Heller 2023</h5>
+  
+
+</body>
+
+</html>
